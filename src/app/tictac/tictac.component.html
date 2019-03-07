@@ -1,32 +1,26 @@
+<!DOCTYPE html>
 <html>
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="MyCSS.css">
+  <script src="jquery.js"></script>
+<script src="TTT.js"></script> -->
+</head>
+
 
 <body>
 
-<p id="title">
-    tictac works!
-  </p>
-
-  <!-- <table style="width:50%">
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th> 
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td> 
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td> 
-      <td>94</td>
-    </tr>
-  </table> -->
-
+<div id="title">
+		<div id="Player1" class="Players"></div>	
+		<div id="tictac" class="Players"></div>		
+		<div id="Player2" class="Players"></div>	
+		</div>
 <div id="game">
 			<div id="gameboard">
-			<div class="Square" id="Square1" value=0></div>
+			<div class="Square" id="Square1" value=0
+		
+    		(click)="onSelect()">
+			</div>
 			<div class="Square" id="Square2" value=1></div>
 			<div class="Square" id="Square3" value=2></div>
 			<div class="Square" id="Square4" value=3></div>
@@ -37,13 +31,23 @@
 			<div class="Square" id="Square9" value=8></div>
 			
 </div>	
-<div class="bg">
-
-      
-    <!-- <img src="assets/img/background.jpg"> -->
-  
-  </div>
 </div>
+<div id="tictac1">
+<div id="toe">
+<div id="Play"></div>
+</div>
+</div>
+
+<!-- <div id="try">
+<div id="again"></div>
+</div>
+<div id="overlay">
+<div id="specialBox">
+</div>
+</div>
+<div id="footer">
+<div id="reset"rel="#back"></div>
+</div> -->
 
 </body>
 </html>

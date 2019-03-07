@@ -1,32 +1,29 @@
 html, body {
-    color: black;
-    background-image:url("src/images/background.jpg");
-    overflow: hidden;
-}
-
-
-.bg{
-    width:100vw;
-    height:14vh;
+	width: 100%;
+	min-height: 100%;
+	background-image:url("src/images/background.jpg " );
+	background-repeat: no-repeat;
 	background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
+	overflow: hidden;
+
 }
 
-#title {
-    color: chartreuse;
-    font-size: 15px;
+#game{
+    width:100vw;
+    height: 95vh;
+   margin:0 auto;
+   overflow: hidden;
 }
 
 #gameboard {
-	width: 80%;
-    height: 70vh;
-	margin-top:2.5%;
+	width: 50%;
+    height:70vh;
+	margin-top:5%;
 	background-image:url("src/images/board.jpg " );
 	background-size: 100% 100%;
     background-repeat: no-repeat;
     border:10px solid #303030 ;
-    margin-left: 9%;
+    margin-left: 23%;
 }
 
 .Square{
@@ -51,3 +48,6 @@ table{
  width: 30%;
  height: 100px;
   }
+
+
+
