@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { enableProdMode } from '@angular/core';
+import { empty } from 'rxjs';
+import { GameService } from '../game.service';
+import { Tile } from './Tile';
+
 
 enableProdMode();
 
@@ -9,16 +13,30 @@ enableProdMode();
   styleUrls: ['./tictac.component.css']
 })
 export class TictacComponent implements OnInit {
-  constructor() {}
+  constructor(public gs:GameService) {
+  }
   ngOnInit() {}
+// tiles 
+  // @Input() tile;
   
 
-  onSelect(): void {
-    document.getElementById("Square1").innerHTML="<img src='../assets/img/X.png' height=100%; width=100% />";
+  onclick():void{
+
+    // document.getElementById("Square2").innerHTML="<img src='X.png' height=100%; width=100% />";
     // var img = document.createElement('img')
     // img.src="background.jpg";
-    // document.getElementById('Square1').appendChild(img);
-    console.log();
+    // document.getElementById('Square'+i).appendChild(img);
+    // console.log("test");
+    // getTileSrc(): string{
+    //   if(tile === 'X'){
+
+    //   }else{
+
+    //   }
+    }
   }
 
-}
+  
+
+
+

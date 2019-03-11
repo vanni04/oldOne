@@ -34,20 +34,7 @@ html, body {
 	margin:auto;
 }
 
-table, th, td {
-    border: 1px solid chartreuse;
-    margin-left: 20%;
-  }
 
-table{
-    position: relative;
-    margin-top: 25%;
-}
-
-  th, td{
- width: 30%;
- height: 100px;
-  }
 
 
 
