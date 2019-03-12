@@ -10,8 +10,11 @@
 	</div>
 <div id="game">
 		<div id="gameboard">
-			<div *ngFor="let tile of gs.tiles" (click)="onClick(tile)" class="Square" id="Square3" value=2>
-				<div></div>
+			<div *ngFor="let tile of gs.tiles"
+			[class.selected]="tile === selectedTile"
+			(click)="onClick(tile)" class="Square"> 
+				<img src = {{imgSrc}} class = "tileImage">
+				<!-- <div ></div> -->
 			</div>
 </div>	
 </div>

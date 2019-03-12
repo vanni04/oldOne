@@ -5,7 +5,7 @@ import { GameService } from './game.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
-  providers: [ GameService ]
+  // providers: [ GameService ]
 })
 export class AppComponent {
   title = 'My First Angular App';

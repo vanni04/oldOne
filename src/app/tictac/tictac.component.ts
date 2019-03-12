@@ -15,25 +15,34 @@ enableProdMode();
 export class TictacComponent implements OnInit {
   constructor(public gs:GameService) {
   }
-  ngOnInit() {}
-// tiles 
-  // @Input() tile;
+
+  tiles : Tile[];
+  imgSrc = "";
+
+  selectedTile: Tile;
+
   
+  createGameBoard(): void{
+    this.tiles = this.gs.createGameBoard();
+  }
 
-  onclick():void{
-
-    // document.getElementById("Square2").innerHTML="<img src='X.png' height=100%; width=100% />";
-    // var img = document.createElement('img')
-    // img.src="background.jpg";
-    // document.getElementById('Square'+i).appendChild(img);
-    // console.log("test");
-    // getTileSrc(): string{
-    //   if(tile === 'X'){
-
-    //   }else{
-
-    //   }
+  onClick(tile: Tile): void{
+    this.selectedTile = tile;
+    if(tile){
+      this.imgSrc = this.gs.onclick();
     }
+    
+
+    
+  }
+
+  ngOnInit() {
+    this.createGameBoard();
+    // this.onClick();
+
+  }
+
+ 
   }
 
   

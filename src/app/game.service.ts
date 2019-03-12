@@ -6,7 +6,10 @@ import { Tile } from './tictac/Tile';
 export class GameService {
 
   tiles = []
-  constructor() { }
+
+  imgSrc = '';
+
+
   createGameBoard(){
     this.tiles = [];
       for (var i = 0; i < 9; i++) {
@@ -16,8 +19,13 @@ export class GameService {
         this.tiles.push(tile);
         console.log("Test");
       }
+      return this.tiles;
   }
 
+  onclick(){
+    this.imgSrc = "background.jpg";
+    return this.imgSrc;
+  }
 
-  
+  constructor() { }
 }
