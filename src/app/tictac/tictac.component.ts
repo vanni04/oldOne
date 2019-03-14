@@ -18,6 +18,7 @@ export class TictacComponent implements OnInit {
 
   tiles : Tile[];
   imgSrc = "";
+  player = "X";
 
   selectedTile: Tile;
 
@@ -26,20 +27,20 @@ export class TictacComponent implements OnInit {
     this.tiles = this.gs.createGameBoard();
   }
 
-  onClick(tile: Tile): void{
+  onClick(tile: Tile, imgSrc): void{
     this.selectedTile = tile;
-    if(tile){
-      this.imgSrc = this.gs.onclick();
+    if(this.player == "X"){
+      this.imgSrc = "background.jpg";
+      // if(tile){
+      //   this.imgSrc = this.gs.onclick();
+      // }
     }
-    
-
-    
+   
   }
+
 
   ngOnInit() {
     this.createGameBoard();
-    // this.onClick();
-
   }
 
  

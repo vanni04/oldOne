@@ -39,6 +39,11 @@ height: 100%;
 width: 100%;
 }
 
+.selected{
+	background-image: url('src/images/background.jpg')
+
+}
+
 
 
 

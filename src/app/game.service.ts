@@ -7,7 +7,6 @@ export class GameService {
 
   tiles = []
 
-  imgSrc = '';
 
 
   createGameBoard(){
@@ -20,11 +19,6 @@ export class GameService {
         console.log("Test");
       }
       return this.tiles;
-  }
-
-  onclick(){
-    this.imgSrc = "background.jpg";
-    return this.imgSrc;
   }
 
   constructor() { }
